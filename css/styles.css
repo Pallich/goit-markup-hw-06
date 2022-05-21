@@ -258,6 +258,7 @@ img {
   box-shadow: 0px 1px 3px var(--modal-box-shadow-one), 0px 1px 1px var(--modal-box-shadow-two),
     0px 2px 1px var(--modal-box-shadow-three);
   border-radius: 4px;
+  padding: 40px;
 
   background-color: var(--prymary-bg-color);
   transition: transform var(--animations-time-function);
@@ -294,6 +295,27 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--prymary-text-color);
+}
+
+.recall-form .name,
+.recall-form .phone,
+.recall-form .email,
+.recall-form .comment {
+  display: flex;
+}
+
+.recall-form .input-title {
+  position: absolute;
 }
 
 /* hero */

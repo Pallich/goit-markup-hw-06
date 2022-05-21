@@ -77,6 +77,37 @@
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                
+                
+
+                <form class="recall-form">
+                    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                    
+                    <label class="name">
+                        <span class="input-title">Имя</span> 
+                        <input type="text" class="input-field" name="name" autocomplete="name">
+                    </label>
+
+                    <label class="phone">
+                        <span class="input-title">Телефон</span>
+                        <input type="tel" class="input-field" name="phone" autocomplete="tel">
+                    </label>
+
+                    <label class="email">
+                        <span class="input-title">Почта</span>
+                        <input type="email" class="input-field" name="email" autocomplete="email">
+                    </label>
+
+                    <label class="comment">
+                        <span class="input-title">Комментарий</span>
+                        <textarea name="comment" cols="30" rows="10"></textarea>
+                    </label>
+
+                    <button type="submit" class="recall-button">
+                        <p class="recall-btn-text">Отправить</p>
+                    </button>
+                </form>
+
             </div>
         </div>
 
@@ -438,7 +469,7 @@
 
                    <form>
                        <label class="subscribe-label">
-                            <input type="email" name="subscribe_email" placeholder="E-mail" class="subscribe-input">
+                            <input type="email" name="subscribe_email" placeholder="E-mail" class="subscribe-input" autocomplete="email">
                       
                             <button type="submit" class="subscribe-button">
                                 <p class="subscribe-btn-text">Подписаться</p>
