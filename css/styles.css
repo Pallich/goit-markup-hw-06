@@ -425,8 +425,13 @@ img {
 
 .confirm .check:checked + .icon {
   background-color: var(--active-color);
+
+  /* Намагаюсь зробити зі спринта іконку, але галочки чомусь не видно. Чому так? Допоможіть будь ласка.  */
+  /* background-image: url(..//images/icons.svg#icon-check);*/
+
   background-image: url(../images/check.svg);
   border-color: var(--active-color);
+  fill: var(--prymary-bg-color);
 }
 
 .confirm {
