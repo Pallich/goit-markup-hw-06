@@ -245,7 +245,6 @@ img {
   opacity: 1;
   background-color: var(--backdrop-bgcolor);
 
-  opacity: 1;
   transition: opacity var(--animations-time-function);
 }
 
@@ -292,6 +291,14 @@ img {
 .close-icon {
   width: 11px;
   height: 11px;
+  fill: #000000;
+
+  transition: fill 250ms var(--animations-time-function);
+}
+
+.btn-close-modal:hover .close-icon,
+.btn-close-modal:focus .close-icon {
+  fill: var(--active-color);
 }
 
 .backdrop.is-hidden {
@@ -344,6 +351,7 @@ img {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 21px;
+  outline: transparent;
 
   transition: border-color 250ms var(--animations-time-function);
 }
@@ -357,6 +365,7 @@ img {
 .recall-form-list .input-field:hover + .recall-icon,
 .recall-form-list .input-field:focus + .recall-icon {
   fill: var(--active-color);
+  pointer-events: none;
 }
 
 .recall-form-list .recall-icon {
@@ -381,6 +390,14 @@ img {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 21px;
+  outline: transparent;
+
+  transition: border-color 250ms var(--animations-time-function);
+}
+
+.recall-form .comment-field:hover,
+.recall-form .comment-field:focus {
+  border-color: var(--active-color);
 }
 
 .comment-field::placeholder {
