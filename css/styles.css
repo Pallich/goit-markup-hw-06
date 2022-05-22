@@ -376,11 +376,26 @@ img {
   color: var(--recall-placeholder-color);
 }
 
-.confirm-form {
-  /* margin-bottom: 20px; */
+.confirm .icon {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--prymary-text-color);
+  border-radius: 4px;
+  margin-right: 7px;
+}
+
+.confirm .check:checked + .icon {
+  background-color: var(--active-color);
+  background-image: url(../images/check.svg);
+  border-color: var(--active-color);
 }
 
 .confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
@@ -391,7 +406,6 @@ img {
 
 .confirm-link {
   color: var(--active-color);
-  text-decoration: underline;
 }
 
 .recall-button {
