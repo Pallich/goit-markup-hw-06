@@ -411,15 +411,18 @@ img {
 }
 
 .confirm .icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   content: '';
   width: 16px;
   height: 15px;
   border: 2px solid var(--prymary-text-color);
   border-radius: 4px;
   margin-right: 7px;
+  fill: transparent;
 
-  transition-property: background-color, border-color;
+  transition-property: background-color, border-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--animations-time-function);
 }
@@ -431,11 +434,6 @@ img {
 
 .confirm .check:checked + .icon {
   background-color: var(--active-color);
-
-  /* Намагаюсь зробити зі спринта іконку, але галочки чомусь не видно. Чому так? Допоможіть будь ласка.  */
-  /* background-image: url(..//images/icons.svg#icon-check);*/
-
-  background-image: url(../images/check.svg);
   border-color: var(--active-color);
   fill: var(--prymary-bg-color);
 }
